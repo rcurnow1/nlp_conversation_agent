@@ -2,16 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>SmartBot</title>
+  <title>LISA</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="bot.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="p5.min.js"></script>
+  <script src="../addons/p5.dom.min.js"></script>
+  <script src="../addons/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
 </head>
+<script>
+  function testKey(event){
+    if(event.keyCode == 13){
+      $('#enter').click()
+    }
+  }
+</script>
 <body>
-  <app-root></app-root>
+  <header id="header" class="alt">
+    <a href="#menu" class="toggle"><span>Menu</span></a>
+  </header>
+
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="http://localhost:8000">Home</a></li>
+      <li><a href="http://localhost:4200">Chat with Lisa</a></li>
+      <li><a href="http://localhost:8000/generic.html">T&C's</a><li>
+      <li><a href="http://localhost:8000/contact.html">Contact Us</a></li>
+      <li><a href="http://localhost:8000/elements.html">FAQ's</a></li>
+    </ul>
+  </nav>
+  <div id="banner">
+    <app-root></app-root>
+  </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
