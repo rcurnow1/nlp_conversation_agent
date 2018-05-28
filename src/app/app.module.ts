@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { DialogflowService } from '@app/services';
 import { MessageListComponent, MessageFormComponent, MessageItemComponent } from '@app/components'
+//import p5 * as p5; 
 
 @NgModule({
   declarations: [

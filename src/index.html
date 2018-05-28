@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css"/>
-  <script src="p5.min.js"></script>
-  <script src="../addons/p5.dom.min.js"></script>
-  <script src="../addons/p5.sound.min.js"></script>
-  <script src="sketch.js"></script>
+  <script src="http://localhost:8000/p5.min.js" async></script>
+  <script src="http://localhost:8000/addons/p5.dom.min.js" async></script>
+  <script src="http://localhost:8000/addons/p5.sound.min.js" async></script>
+  <script src="http://localhost:8000/sketch.js" async></script>
+  <link rel="stylesheet" href="http://localhost:8000/assets/css/main.css" />
 </head>
 <script>
   function testKey(event){
@@ -22,7 +23,8 @@
     }
   }
 </script>
-<body>
+<body style="overflow-x: hidden">
+  <iframe src="http://localhost:8000/background.html" style="top:0px;width:100vw;height:100vh;position:fixed;z-index:-1"></iframe>
   <header id="header" class="alt">
     <a href="#menu" class="toggle"><span>Menu</span></a>
   </header>
@@ -36,11 +38,15 @@
       <li><a href="http://localhost:8000/elements.html">FAQ's</a></li>
     </ul>
   </nav>
-  <div id="banner">
-    <app-root></app-root>
-  </div>
+  <app-root></app-root>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="http://localhost:8000/assets/js/jquery.min.js"></script>
+<script src="http://localhost:8000/assets/js/jquery.scrolly.min.js"></script>
+<script src="http://localhost:8000/assets/js/jquery.scrollex.min.js"></script>
+<script src="http://localhost:8000/assets/js/skel.min.js"></script>
+<script src="http://localhost:8000/assets/js/util.js"></script>
+<script src="http://localhost:8000/assets/js/main.js"></script>
 </html>
